@@ -14,68 +14,27 @@ class FlutterTutorialWidget extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.grey[900],
         ),
-        body: Container(
-          child: Container(
-            // color: Colors.black,
-            // margin: EdgeInsets.all(20),
-            // padding: EdgeInsets.all(30),
-            // transform: Matrix4.rotationZ(0.1),
-            child: IconButton(
-              icon: Icon(
-                Icons.search,
-              ),
-              iconSize: 50.0,
-              color: Colors.white,
-              onPressed: () {
-                print("New Info add");
-              },
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.blue,
+              padding: EdgeInsets.all(40),
+              child: Text('1'),
             ),
-            decoration: BoxDecoration(
-              color: Colors.black,
-              // borderRadius: BorderRadius.circular(20),
-              shape: BoxShape.circle,
-              border: Border.all(
-                width: 2,
-                color: Colors.white,
-                style: BorderStyle.solid,
-              ),
-              boxShadow: [
-                BoxShadow(
-                    color: Colors.black,
-                    spreadRadius: 1,
-                    blurRadius: 5,
-                    offset: Offset(5, 5)),
-              ],
+            Container(
+              color: Colors.yellow,
+              padding: EdgeInsets.all(40),
+              child: Text('2'),
             ),
-          ),
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/images/img1.jpg"),
-              fit: BoxFit.fill,
+            Container(
+              color: Colors.green,
+              padding: EdgeInsets.all(40),
+              child: Text('3'),
             ),
-            // gradient: RadialGradient(
-            //   colors: [
-            //     Colors.black,
-            //     Colors.white,
-            //   ],
-            // ),
-          ),
+          ],
         ),
-        //  Padding(
-        //   padding: EdgeInsets.all(20),
-        //   child: IconButton(
-        //     icon: Icon(
-        //       Icons.search,
-        //     ),
-        //     iconSize: 50.0,
-        //     color: Colors.white,
-        //     onPressed: () {
-        //       print("New Info add");
-        //     },
-        //   ),
-        // ),
-        // SvgPicture.asset("assets/images/im3.svg"),
         floatingActionButton: FloatingActionButton(
           child: Text("ADD"),
           backgroundColor: Colors.grey[900],
