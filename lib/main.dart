@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() => runApp(FlutterTutorialWidget());
 
@@ -13,18 +14,17 @@ class FlutterTutorialWidget extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.grey[900],
         ),
-        body: Text(
-          "Hello world",
-          style: TextStyle(
-            fontSize: 30.0,
-            fontStyle: FontStyle.italic,
-            fontWeight: FontWeight.bold,
-            decoration: TextDecoration.underline,
-            letterSpacing: 3.0,
-            color: Colors.white,
-            fontFamily: "Slabo",
+        body: IconButton(
+          icon: Icon(
+            Icons.search,
           ),
+          iconSize: 50.0,
+          color: Colors.white,
+          onPressed: () {
+            print("New Info add");
+          },
         ),
+        // SvgPicture.asset("assets/images/im3.svg"),
         floatingActionButton: FloatingActionButton(
           child: Text("ADD"),
           backgroundColor: Colors.grey[900],
