@@ -14,15 +14,18 @@ class FlutterTutorialWidget extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.grey[900],
         ),
-        body: IconButton(
-          icon: Icon(
-            Icons.search,
+        body: Padding(
+          padding: EdgeInsets.all(20),
+          child: IconButton(
+            icon: Icon(
+              Icons.search,
+            ),
+            iconSize: 50.0,
+            color: Colors.white,
+            onPressed: () {
+              print("New Info add");
+            },
           ),
-          iconSize: 50.0,
-          color: Colors.white,
-          onPressed: () {
-            print("New Info add");
-          },
         ),
         // SvgPicture.asset("assets/images/im3.svg"),
         floatingActionButton: FloatingActionButton(
