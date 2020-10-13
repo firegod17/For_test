@@ -15,23 +15,38 @@ class FlutterTutorialWidget extends StatelessWidget {
           backgroundColor: Colors.grey[900],
         ),
         body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              color: Colors.blue,
-              padding: EdgeInsets.all(40),
-              child: Text('1'),
+            Expanded(
+              flex: 1,
+              child: Container(
+                color: Colors.blue,
+                padding: EdgeInsets.all(40),
+                child: Text('1'),
+              ),
             ),
-            Container(
-              color: Colors.yellow,
-              padding: EdgeInsets.all(40),
-              child: Text('2'),
+            // const SizedBox(
+            //   width: 10,
+            // ),
+            Expanded(
+              flex: 2,
+              child: Container(
+                color: Colors.yellow,
+                padding: EdgeInsets.all(40),
+                child: Text('2'),
+              ),
             ),
-            Container(
-              color: Colors.green,
-              padding: EdgeInsets.all(40),
-              child: Text('3'),
+            // const SizedBox(
+            //   width: 30,
+            // ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                color: Colors.green,
+                padding: EdgeInsets.all(40),
+                child: Text('3'),
+              ),
             ),
           ],
         ),
