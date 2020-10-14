@@ -1,23 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:test_flutter/event.dart';
 
 void main() => runApp(FlutterTutorialWidget());
 
 class FlutterTutorialWidget extends StatelessWidget {
-  final List<String> events = [
-    "event 1",
-    "event 2",
-    "event 3",
-    "event 4",
-    "event 5",
-    "event 6",
-    "event 7",
-    "event 8",
-    "event 9",
-    "event 10",
-    "event 11",
-    "event 12",
+  final List<Event> events = [
+    Event(name: "Maksym", location: "", startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 1",
+        location: "location 1",
+        startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 2",
+        location: "location 2",
+        startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 3",
+        location: "location 3",
+        startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 4",
+        location: "location 4",
+        startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 5",
+        location: "location 5",
+        startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 6",
+        location: "location 6",
+        startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 7",
+        location: "location 7",
+        startDateTime: DateTime.now()),
+    Event(
+        name: "Maksym 8",
+        location: "location 8",
+        startDateTime: DateTime.now()),
   ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
