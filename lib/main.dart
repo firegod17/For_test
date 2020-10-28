@@ -48,7 +48,7 @@ class FlutterTutorialWidget extends StatelessWidget {
       title: "FlutterTest",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter tester! "),
+          title: Text("Flutter tester!"),
           centerTitle: true,
           backgroundColor: Colors.grey[900],
         ),
